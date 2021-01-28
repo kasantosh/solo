@@ -1,0 +1,27 @@
+/* ============================ 
+  Default Theme
+  ----------------------------
+  Fonts: Raleway and Open Sans
+  ----------------------------
+  Colors:
+  Moon Yellow: #f4c613
+  Grey: #212226
+  White Smoke: #f4f4f4
+  White: #fff
+  Black: #000
+ ============================ */
+
+ :root {
+  --color-primary: #dba903;
+  --color-secondary:  #212226;
+  --color-white-smoke: #f4f4f4;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-light-1: #eeeeee;
+  --color-grey-light-2: #e2e2e2;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 1rem 2rem rgba(0,0,0,0.2); 
+}
+
