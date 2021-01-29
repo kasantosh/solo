@@ -11,6 +11,10 @@
   Black: #000
  ============================ */
 
+
+ /* ===================================== 
+          Root colour variables
+ ======================================== */
  :root {
   --color-primary: #dba903;
   --color-secondary:  #212226;
@@ -23,5 +27,30 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 1rem 2rem rgba(0,0,0,0.2); 
+}
+
+/* ============================ 
+          Preloader
+ ============================ */
+
+#preloader {
+  background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#status {
+  background-image: url('../img/preloader/preloader.gif');
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
