@@ -401,3 +401,49 @@ section {
    background: none;
    color: inherit;
  }
+
+   /* ============================ 
+              Skills
+ ============================ */
+ .skill {
+  margin-bottom: 20px;
+}
+
+.skill h4 {
+  line-height: 62px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.progress {
+  height: 25px;
+  border-radius: 0;
+  background-color: var(--color-white-smoke);
+  overflow: visible;
+}
+
+ .progress-bar {
+   background-color: var(--color-primary);
+   position: relative;
+ }
+
+ .progress-bar span {
+   font-size: 11px;
+   font-weight: 100;
+   font-family: "Open Sans", sans-serif;
+   background-color: var(--color-secondary);
+   padding: 3px;
+   position: absolute;
+   left: 97%;
+   top: -38px;
+ }
+
+ .progress-bar span:before {
+   content: '';
+   border-top: 8px solid var(--color-secondary);
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   position: absolute;
+   bottom: -8px;
+   left: 28%;
+ }
