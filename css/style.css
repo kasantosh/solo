@@ -16,7 +16,7 @@
           Root colour variables
  ======================================== */
  :root {
-  --color-primary: #dba903;
+  --color-primary: #f4c613;
   --color-secondary:  #313235;
   --color-white-smoke: #f4f4f4;
   --color-white: #fff;
@@ -277,4 +277,28 @@ section {
 .about-item p {
   margin-top: 20px;
 }
- 
+
+/* Hover State */
+.about-item:hover {
+  background-color: var(--color-primary);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p  {
+  color: #fff;
+}
+
+.about-item:hover hr {
+  background-color: #fff;
+}
+
+.about-item:hover i {
+  transform: translateY(-20px);
+}
+
+.about-item,
+.about-item i,
+.about-item hr  {
+  transition: all 0.4s ease-in-out;
+}
