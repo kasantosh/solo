@@ -22,3 +22,19 @@ $(document).ready(function(){
     dots: false
   });
 });
+
+/*===================================
+            Progress Bars 
+======================================*/
+$(document).ready(function () {
+  $('#progress-elements').waypoint(function() {
+    $('.progress-bar').each(function() {
+      $(this).animate({
+        width: $(this).attr("aria-valuenow") + '%'
+      }, 1500);
+    });
+    this.destroy();
+  }, { 
+    offset: 'bottom-in-view' 
+  }); 
+});
