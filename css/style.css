@@ -447,3 +447,31 @@ section {
    bottom: -8px;
    left: 28%;
  }
+
+ /*===================================
+            Statement 
+======================================*/
+#statement {
+  background: url('../img/tech/tech-quote.jpg') no-repeat fixed center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-position: center;
+  background-attachment: fixed; */
+}
+
+#statement .content-box-lg {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#tech-statement h3 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+#tech-statement p {
+  font-size: 15px;
+  color: var(--color-primary);
+  font-family: "Raleway", sans-serif;
+  margin-top: 8px;
+}
