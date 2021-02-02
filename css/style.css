@@ -205,9 +205,9 @@ section {
 }
 
 
-/* ============================ 
-            Vertical Headings
- ============================ */
+/* =============================================== 
+            Vertical/Horizontal Headings
+ ================================================= */
 .vertical-heading h5 {
  color: var(--color-primary);
  font: 14px;
@@ -223,10 +223,31 @@ section {
 
 .vertical-heading h2 {
  margin: 0 0 0 35px;
- font-size: 42px;
- font-weight: 100;
- line-height: 45px;
 }
+
+.vertical-heading h2,
+.horizontal-heading h2 {
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 45px;
+}
+
+.horizontal-heading {
+  margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+  font-size: 16px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.horizontal-heading h2 {
+  margin: 0;
+}
+
 
 /* ============================ 
             About 01
@@ -474,4 +495,46 @@ section {
   color: var(--color-primary);
   font-family: "Raleway", sans-serif;
   margin-top: 8px;
+}
+
+ /*===================================
+            Services 01 
+======================================*/
+#services-01 img {
+  margin: 60px 0;
+}
+
+.service {
+  margin: 35px 0;
+}
+
+.service .icon {
+  font-size: 42px;
+  margin: 0;
+  transition: all 0.2s linear;
+}
+
+.service:hover .icon {
+  transform: translateX(-10px);
+  color: var(--color-primary);
+}
+
+.service h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 0 0 6px 0;
+}
+
+.service:hover h5 {
+  color: var(--color-secondary);
+}
+
+.service h4 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+.service p {
+  line-height: normal;
 }
