@@ -156,7 +156,6 @@ section {
   text-transform: uppercase;
   margin: 0 6px;
   padding: 8px 30px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -170,6 +169,19 @@ section {
   color: #fff;
   background-color: var(--color-primary);
   border: 1px solid  var(--color-primary);
+}
+
+.btn-yellow {
+  color: #fff;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.btn-yellow:hover, 
+.btn-yellow:focus {
+  color: #fff;
+  background-color: var(--color-secondary);
+  border: 1px solid  var(--color-secondary);
 }
 
  /* ============================ 
@@ -593,8 +605,25 @@ section {
   margin: 0 auto;
 }
 
-.tab-bg {
+.service-tab .tab-bg {
   background: #fff;
   padding: 59px 30px;
   min-height: 481px;
+}
+
+.service-tab h2 {
+  font-size: 42px;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.service-tab h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-tab p {
+  line-height: 24px;
+  margin-bottom: 30px;
 }
