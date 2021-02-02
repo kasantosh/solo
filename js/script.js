@@ -38,3 +38,13 @@ $(document).ready(function () {
     offset: 'bottom-in-view' 
   }); 
 });
+
+/*===================================
+            Responsive Tabs 
+======================================*/
+$(document).ready(function() {
+  $('#services-tabs').responsiveTabs({
+    animation: 'slide',
+    duration: 500
+  });
+});
