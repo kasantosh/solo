@@ -48,3 +48,23 @@ $(document).ready(function() {
     duration: 500
   });
 });
+
+/*===================================
+        Porfolio Isotope plugin 
+======================================*/
+$(window).on('load', function() {
+  // Initialize Isotope
+  $('#isotope-container').isotope({
+
+  });
+  // filter items on button click
+  $('#isotope-filters').on('click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('#isotope-container').isotope({ filter: filterValue });
+
+    // active button
+    $('#isotope-filters').find('.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+});
