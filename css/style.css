@@ -641,6 +641,7 @@ section {
 
 .portfolio-item {
   overflow: hidden;
+  position: relative;
 }
 /* Filters CSS */
 #isotope-filters {
@@ -692,4 +693,69 @@ section {
 
 .portfolio-item img:hover {
   transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.portfolio-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 17, 0.9);
+  cursor: zoom-in;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Item Details Effect */
+.portfolio-item-detail {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.portfolio-item-detail h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-20%);
+  transition: all 0.5s;
+}
+
+.portfolio-item-detail span {
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: 6px;
+  width: 30px;
+  margin: 11px auto 5px auto;
+}
+
+.portfolio-item-detail p {
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  transform: translateY(20%);
+  transition: all 0.5s;
+}
+
+/* Show Overlay on hover */
+
+.portfolio-item:hover .portfolio-item-detail h3 {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-detail p {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+  opacity: 1;
 }

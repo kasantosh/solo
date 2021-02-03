@@ -68,3 +68,17 @@ $(window).on('load', function() {
   });
 
 });
+
+/*===================================
+        Magnific Popup plugin 
+======================================*/
+$(function() {
+  $('#portfolio-wrapper').magnificPopup({
+    delegate: 'a', //<a> child item will open up
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
