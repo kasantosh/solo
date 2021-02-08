@@ -10,7 +10,7 @@ $(window).on('load', function() {
             Team 
 ======================================*/
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('#team-members').owlCarousel({
     items: 2,
     autoplay: true,
     smartSpeed: 500,
@@ -79,6 +79,22 @@ $(function() {
     gallery: {
       enabled: true
     }
+  });
+});
+
+/*===================================
+            Testimonials 
+======================================*/
+$(document).ready(function(){
+  $('#testimonial-slider').owlCarousel({
+    items: 1,
+    autoplay: false,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    dots: false
   });
 });
 
