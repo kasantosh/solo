@@ -184,6 +184,19 @@ section {
   border: 1px solid  var(--color-secondary);
 }
 
+.btn-white {
+  color: var(--color-secondary);
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.btn-white:hover, 
+.btn-white:focus {
+  color: #fff;
+  background-color: var(--color-secondary);
+  border: 1px solid  var(--color-secondary);
+}
+
  /* ============================ 
             Arrow Down
  ============================ */
@@ -858,7 +871,7 @@ section {
 
 .pricing-table .price h2 span.dollar {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   position: absolute;
   left: -20px;
   top: 5px;
@@ -877,5 +890,59 @@ section {
   font-weight: 200;
   margin: 0;
   padding: 0;
-  
+}
+
+.pricing-table ul.package {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.pricing-table ul.package li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.pricing-table ul.package li i {
+  width: 24px;
+}
+
+.pricing-table .btn-yellow,
+.pricing-table.black .btn-white {
+  width: 96%;
+}
+
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package {
+  color: #fff;
+}
+
+.pricing-table:hover .btn-yellow {
+  background: #fff;
+  color: var(--color-secondary);
+  border: 1px solid #fff;
+}
+
+.pricing-table .btn-yellow:hover,
+.pricing-table .btn-yellow:focus {
+  background: var(--color-secondary);
+  color: #fff;
+  border: 1px solid var(--color-secondary);
+}
+
+/* Black Pricing table */
+.pricing-table.black {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.pricing-table.black .type h4 {
+  color: #fff;
+}
+
+.pricing-table.black:hover {
+  background: var(--color-primary);
 }
