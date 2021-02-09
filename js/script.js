@@ -123,3 +123,34 @@ $(document).ready(function(){
     dots: false
   });
 });
+
+ /*===================================
+            Google map 
+======================================*/
+$(window).on('load', function() {
+
+  var addressString = '230 Broadway, NY, New York 10007, USA';
+  var myLatLng = { lat: 40.712300, lng: -74.007930 };
+
+  // Render map
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: myLatLng
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Click to View Address'
+    });
+
+    // Info window
+    var infoWindow = new google.maps.InfoWindow({
+      content: addressString
+    })
+    // Show info window when uses clicks maker
+    marker.addListener("click", () => {
+      infoWindow.open(map, marker);
+    });
+
+});
