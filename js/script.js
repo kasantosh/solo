@@ -98,3 +98,28 @@ $(document).ready(function(){
   });
 });
 
+/*===================================
+            Stats 
+======================================*/
+$(document).ready(function() {
+  $('.counter').counterUp({
+    delay: 100,
+    time: 2000
+  });
+});
+
+/*===================================
+            Clients 
+======================================*/
+$(document).ready(function(){
+  $('#clients-list').owlCarousel({
+    items: 6,
+    autoplay: false,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    dots: false
+  });
+});
