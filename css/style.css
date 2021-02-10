@@ -1176,3 +1176,51 @@ footer p {
 footer p span {
   color: var(--color-primary);
 }
+
+ /*===================================
+            Navigation 
+======================================*/
+.navbar {
+  padding: 35px 0 20px 0;
+  transition: all 0.3s linear;
+}
+
+.site-nav-wrapper {
+  padding: 0 85px;
+}
+
+.navbar-brand {
+  padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+  background: none;
+  color: var(--color-primary);
+}
+
+/* White Navigation */
+.white-nav-top {
+  background: #fff;
+  padding: 10px 0 10px 0;
+  box-shadow: 0 8px 6px -9px #999;
+  z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+  color: var(--color-secondary);
+}
+
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:focus {
+  color: var(--color-primary);
+}

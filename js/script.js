@@ -154,3 +154,32 @@ $(window).on('load', function() {
     });
 
 });
+
+ /*===================================
+            Navigation 
+======================================*/
+// Show & Hide white navigation
+
+$(function() {
+  // Show/hide nac on page load
+  showHideNav();
+
+  $(window).scroll(function() {
+    // Show/hide nav on page scroll
+    showHideNav();
+  });
+
+  function showHideNav() {
+    if ($(window).scrollTop() > 200) {
+      // Show White 
+      $('nav').addClass('white-nav-top');
+      // Show dark logo
+      $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png');
+    } else {
+      // Hide White Nav
+      $('nav').removeClass('white-nav-top');
+      // SHow white logo
+      $('.navbar-brand img').attr('src', 'img/logo/logo.png');
+    }
+  }
+})
