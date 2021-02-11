@@ -169,16 +169,20 @@ $(function() {
   });
 
   function showHideNav() {
-    if ($(window).scrollTop() > 200) {
+    if ($(window).scrollTop() > 150) {
       // Show White 
       $('nav').addClass('white-nav-top');
       // Show dark logo
       $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png');
+      // Show home button
+      $('#back-to-top').fadeIn();
     } else {
       // Hide White Nav
       $('nav').removeClass('white-nav-top');
       // SHow white logo
       $('.navbar-brand img').attr('src', 'img/logo/logo.png');
+      // Hide back to top button
+      $('#back-to-top').fadeOut();
     }
   }
 });
