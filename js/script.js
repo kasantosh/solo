@@ -182,4 +182,4 @@ $(function() {
       $('.navbar-brand img').attr('src', 'img/logo/logo.png');
     }
   }
-})
+});
