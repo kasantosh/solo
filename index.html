@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
   <!-- Preloader -->
   <div id="preloader">
     <div id="status">&nbsp;</div>
@@ -50,7 +50,7 @@
         <div class="site-nav-wrapper">
 
           <div class="navbar-header">
-            <a href="#home" class="navbar-brand"><img src="img/logo/logo.png" alt="logo">
+            <a href="#home" class="navbar-brand smooth-scroll"><img src="img/logo/logo.png" alt="logo">
             </a>
           </div>
 
@@ -58,13 +58,13 @@
           <div class="container">
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav pull-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                <li><a class="smooth-scroll" href="#about">About</a></li>
+                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -98,14 +98,14 @@
         <div id="home-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at minus soluta.</p>
         </div>
-        <div id="home-btn">
+        <div id="home-btn" class="smooth-scroll">
           <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
         </div>
       </div>
     </div>
 
     <!-- Arrow Down -->
-    <a href="#about" id="arrow-down">
+    <a href="#about" id="arrow-down" class="smooth-scroll">
       <i class="fa fa-angle-down"></i>
     </a>
     
@@ -1326,6 +1326,8 @@
   <!-- Google Map JS -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOYWLc3G7L9jJDDOB8cuEL3iae8KDlxb0&callback=initMap"
   type="text/javascript"></script>
+  <!-- Smooth-Scroll -->
+  <script src="js/smooth-scroll/jquery.easing.1.3.js"></script>
   <!-- Custom JS -->
   <script src="js/script.js"></script>
 </body>
