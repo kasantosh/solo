@@ -19,7 +19,17 @@ $(document).ready(function(){
     autoplayHoverPause: true,
     nav: true,
     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-    dots: false
+    dots: false,
+    responsive: {
+      // breakpoint for 0 up
+      0: {
+        items: 1
+      },
+      // breakpoint for 480 up
+      480: {
+        items: 2
+      }
+    }
   });
 });
 

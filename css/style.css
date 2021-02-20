@@ -837,17 +837,24 @@ section {
   line-height: normal;
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-.author .author-name-des {
-  width: 106px;
-  margin-top: 25px;
+.author .author-name-designation {
+  width: 150px;
+  margin-top: 10px;
   text-align: left;
 }
 
-.author .author-name-des p {
+.author .author-name-designation p {
   margin: 0;
+  font-size: 10px;
+}
+
+.author-name-designation p span {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
  /*===================================
@@ -1117,14 +1124,16 @@ section {
 ul.office-details {
   list-style: none;
   padding: 0;
+  margin-top: 0;
 
 }
 
 ul.office-details li {
   font-family: "Open Sans", sans-serif;
   margin-top: 12px;
-  display: flex;
+  display: inline-flex;
 }
+
 
 ul.office-details li i {
   font-size: 18px;
