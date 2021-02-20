@@ -1125,13 +1125,13 @@ ul.office-details {
   list-style: none;
   padding: 0;
   margin-top: 0;
-
 }
 
 ul.office-details li {
   font-family: "Open Sans", sans-serif;
-  margin-top: 12px;
-  display: inline-flex;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 
