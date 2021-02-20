@@ -83,15 +83,98 @@
                 margin: 0 0 0 6px;
                 font-size: 35px;
           }
+          /* Stats */
+          .stats-item p {
+                line-height: 18px;
+          }
+
           /* Blog */
           .blog-post .post-meta p {
                 line-height: 14px;
+          }
+
+          /* Contact */
+          ul.office-details li {
+                margin-right: 15px;
+          }
+
+          ul.office-details li i {
+                width: 25px;
           }
            
 }
 
 /* Small Devices */
 @media (max-width: 767px) {
-     
+      /* Home heading */
+      #home-heading h1 {
+      font-size: 42px;
+      }
+      #home-heading p {
+            font-size: 13px;
+            line-height: 18px;
+            margin: 8px 2px 30px 2px
+      }
+      /* Generic button size */
+      .btn-general {
+            padding: 8px 25px 6px 25px;
+            font-size: 10px;
+      }   
+
+      /* About 01 */
+      /* Large Content Box */
+      .content-box-lg {
+            padding: 90px 0;
+      }
+      /* Vertical Heading */
+      .vertical-heading {
+            text-align: center;
+      }
+      .vertical-heading h5 {
+            transform: rotate(0);
+            display: block;
+            position: static;
+            margin-bottom: 10px;
+      }
+      .vertical-heading h2 {
+            font-size: 29px;
+            line-height: normal;
+            margin: 0;
+      }
+      #about-left {
+            margin-bottom: 50px;
+      }
+      #about-right p {
+            text-align: center;
+      }
+
+      /* About 02 */
+      /* Medium content box */
+      .content-box-md {
+            padding: 80px 0;
+      }
+      .about-item {
+            padding: 55px 30px;
+            margin-bottom: 35px;
+      }
+      .about-item i {
+            font-size: 30px;
+      }
+      .about-item h3 {
+            font-size: 18px;
+      }
+      #team-left .vertical-heading {
+            min-height: 130px;
+      }
+      .skill h4 {
+            font-size: 14px;
+            line-height: 35px;
+      }
+      /* tech statement */
+      #tech-statement h3 {
+            font-size: 20px;
+            line-height: 30px;
+      }
+
   
 }
